@@ -3,7 +3,10 @@
 import React from 'react'
 
 import '../bootstrap/scss/bootstrap.scss'
+// import {createSequence, setSequenceHandler, startSequence, stopSequence, resetSequence} from '../sequence/api'
+import Sequence from './Sequence.jsx'
 
+var sequence = {}
 
 export default class App extends React.Component {
   constructor(props){
@@ -11,9 +14,7 @@ export default class App extends React.Component {
   }
   render(){
     return(
-      <div className="jumbotron">
-        <h1>Hello world!!</h1>
-      </div>
+      <Sequence array={[8,1]} />
     )
   }
 }
