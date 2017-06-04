@@ -63,7 +63,6 @@ export default class Sequence extends React.Component {
     }))
   }
   renderArray(){
-    // console.log('render: '+this.state.array)
     if(this.state.array !== "end"){
       return JSON.stringify(this.state.array)
     } else {
@@ -72,7 +71,7 @@ export default class Sequence extends React.Component {
   }
   render(){
     return(
-      <div className="jumbotron">
+      <div>
         <h1>{this.renderArray()}</h1>
         <h2>Current index: {this.state.index}</h2>
         <button className="btn btn-success" onClick={() => this.start()} >Start !</button>
