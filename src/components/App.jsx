@@ -17,7 +17,7 @@ export default class App extends React.Component {
   render(){
     return(
       <Layout>
-        <Sequence array={[8,1]} />
+        <Display />
       </Layout>
 
     )
