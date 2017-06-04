@@ -15,6 +15,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {
+  devtool: (process.env.NODE_ENV === 'developpement')?'eval':'cheap-source-map',
   entry: './src/index.js',
   output: {
     path: path.resolve('lib'),
@@ -40,5 +41,8 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig, DefinePluginConfig]
+  plugins: [
+    HtmlWebpackPluginConfig, DefinePluginConfig,
+    new webpack.optimize.AggressiveMergingPlugin()//Merge chunks
+  ]
 }
