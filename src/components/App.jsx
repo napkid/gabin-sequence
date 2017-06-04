@@ -4,6 +4,11 @@ import React from 'react'
 
 import '../bootstrap/scss/bootstrap.scss'
 
+import Layout from './Layout.jsx'
+import Display from './Display.jsx'
+import Sequence from './Sequence.jsx'
+
+var sequence = {}
 
 export default class App extends React.Component {
   constructor(props){
@@ -11,9 +16,10 @@ export default class App extends React.Component {
   }
   render(){
     return(
-      <div className="jumbotron">
-        <h1>Hello world!!</h1>
-      </div>
+      <Layout>
+        <Display />
+      </Layout>
+
     )
   }
 }
