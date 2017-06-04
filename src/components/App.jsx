@@ -3,7 +3,9 @@
 import React from 'react'
 
 import '../bootstrap/scss/bootstrap.scss'
-// import {createSequence, setSequenceHandler, startSequence, stopSequence, resetSequence} from '../sequence/api'
+
+import Layout from './Layout.jsx'
+import Display from './Display.jsx'
 import Sequence from './Sequence.jsx'
 
 var sequence = {}
@@ -14,7 +16,10 @@ export default class App extends React.Component {
   }
   render(){
     return(
-      <Sequence array={[8,1]} />
+      <Layout>
+        <Display />
+      </Layout>
+
     )
   }
 }
