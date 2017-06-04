@@ -18,7 +18,7 @@ module.exports = {
   devtool: (process.env.NODE_ENV === 'developpement')?'eval':'cheap-source-map',
   entry: './src/index.js',
   output: {
-    path: path.resolve('lib'),
+    path: path.resolve('./'),
     filename: 'bundle.js'
   },
   module: {

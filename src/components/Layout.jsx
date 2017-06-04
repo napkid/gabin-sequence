@@ -13,7 +13,7 @@ export default class Layout extends React.Component {
           <div className="card-block">
             <div className="text-center">
               <h1 className="display-3 font-weight-bold">The Gabin Sequence</h1>
-              <p className="lead">A little math experiment</p>
+              <p className="lead">A little math experiment - v1.0.1</p>
             </div>
 
             <hr style={{margin:"3em"}}/>
